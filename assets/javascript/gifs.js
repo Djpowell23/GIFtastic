@@ -12,7 +12,7 @@ function displayGIFs() {
     // Create a userTopic variable from the search field
     var userTopic = $(this).data('name');
     // Create a queryURL to search GIPHY API for user's search term
-    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=game+of+thrones+' + userTopic + '&api_key=vdcP3rWSIC7Dq5JshDOurRl6sHCU0PWF&limit=10';
+    var queryURL = 'https://api.giphy.com/v1/gifs/search?q=game+of+thrones+' + userTopic + '&api_key=vdcP3rWSIC7Dq5JshDOurRl6sHCU0PWF&limit=15';
     // AJAX Call to GIPHY API
     $.ajax({
         url: queryURL,
@@ -34,8 +34,13 @@ function displayGIFs() {
             gifImg.attr('data-state', 'still');
             // Original source of GIF
             gifImg.attr('src',response.data[i].images.fixed_height.url);
-            // Append gifImg to the gifDiv
+            // Create paragraph for rating
+            var rating = $('<p>').text('Rating: '+ response.data[i].rating.toUpperCase());
+            // Add class to rating
+            rating.addClass('rating');
+            // Append gifImg and rating to the gifDiv
             gifDiv.append(gifImg);
+            gifDiv.append(rating);
             // Prepend to HTML
             $('#gifs').prepend(gifDiv);
         }
@@ -60,7 +65,6 @@ function renderButtons() {
         newButton.text(topics[i]);
         // Add button to HTML
         $('#buttons').append(newButton);
-
     }
 }
 

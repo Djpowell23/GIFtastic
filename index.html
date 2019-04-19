@@ -10,25 +10,75 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- Style CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Snow CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/snow.css">
 </head>
 <body>
-    <div class="header"><header></header></div>
-    <div class="container">
-        <!-- Buttons will appear here -->
-        <div id="buttons"></div>
-        <!-- Input Form -->
-        <form id="topic-form">
-            <label for="topic-input">Add Topic for GIFs</label>
-            <input type="text" id="topic-input">
-            
+    <!-- Snowflake Effect -->
+    <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+              ❅
+            </div>
+            <div class="snowflake">
+              ❆
+            </div>
+            <div class="snowflake">
+              ❅
+            </div>
+            <div class="snowflake">
+              ❆
+            </div>
+            <div class="snowflake">
+              ❅
+            </div>
+            <div class="snowflake">
+              ❆
+            </div>
+          </div>
 
-            <!-- Button triggers new topic to be added -->
-            <button id="add-topic">Submit</button>
-        </form>
-        
-        
-        <!-- GIFs displayed here -->
-        <div id="gifs"></div>
+    <header class="header">
+        <img class="header-image" src="assets/images/header.jpg">
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Input Form -->
+                <form id="topic-form">
+                    <label for="topic-input">Winter is Coming</label>
+                    <input type="text" id="topic-input">
+                    <!-- Button triggers new topic to be added -->
+                    <button id="add-topic">Submit</button>
+                </form>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Buttons appear here -->
+                <div id="buttons"></div>   
+            </div>
+            <div class="col-md-8">
+                <!-- GIFs displayed here -->
+                <div id="gifs"></div>
+            </div>
+        </div>       
     </div>
 </body>
 <!-- jQuery -->

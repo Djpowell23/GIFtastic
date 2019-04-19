@@ -1,6 +1,16 @@
 body {
-    background-color: #39383d;
+    background-color: black;
     color: white;
+}
+
+label {
+    font-size: 22px;
+}
+
+.header-img {
+    display: inline-block;
+    height: 250px;
+    margin: 0 auto;
 }
 
 .container {
@@ -8,20 +18,28 @@ body {
 }
 
 .gif-container {
-    border: 2px solid black;
-    height: 200px;
+    border: 2px solid #c58700;
+    display: inline-block;
+    height: 215px;
     justify-content: center;
     padding-bottom: 10px;
+    margin-bottom: 15px;
     margin-left: 25px;
     margin-right: 25px;
-    width: 300px;
+}
+
+.gif-rating {
+    padding: 5px;
+    justify-content: center;
 }
 
 .header {
-    background: url('../images/header.jpg');
-    height: 200px;
-    position: fixed;
-    top: 0;
+    height: 225px;
+    text-align: center;
+}
+
+.rating {
+    font-size: 22px;
 }
 
 .topics-button {
@@ -33,15 +51,23 @@ body {
     width: 20vw;
 }
 
-#buttons, #form, #gifs, #topic-form {
-    border: 1px solid #c58700;
+#buttons {
+    width: 40vw;
+}
+
+#buttons, #form, #gifs {
     margin: auto;
     margin-top: 15px;
     text-align: center;
-    width: 80vw;
 }
 
 #add-topic, #topic-input {
     font-size: 23px;
     margin-top: 30px;
+}
+
+#topic-form {
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
 }
