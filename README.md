@@ -1,2 +1,2 @@
 # GIFtastic
-Use GIPHY API to display relevant GIFs to the webpage
+GIF Generator for Game of Thrones related images
